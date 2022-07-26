@@ -43,6 +43,10 @@
 
     <section id="header" class="mt-3 py-3">
         <div class="jumbotron text-center">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                <strong>Pendaftaran berhasil!</strong> Silahkan bergabung ke whatsapp group.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <img class="py-3 mt-4" src="img/logo.png" alt="Logo Prabu" width="200">
             <h1 class="display-6 fw-bold ">Pramuka Universitas Bengkulu</h1>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -52,8 +56,7 @@
             </svg>
         </div>
     </section>
-
-    <section id="formulir">
+    <section id="formulir" class="formulir">
         <div class="container">
             <div class="row text-center">
                 <div class="col">
@@ -63,10 +66,6 @@
 
             <div class="row justify-content-center mt-4">
                 <div class="col-md-6">
-                    <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-                        <strong>Pendaftaran berhasil!</strong> Silahkan bergabung ke whatsapp group.
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
                     <form name="data-cagakdega">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Nama Lengkap</label>
@@ -159,6 +158,7 @@
         const btnKirim = document.querySelector('.btn-kirim');
         const btnLoading = document.querySelector('.btn-loading');
         const myAlert = document.querySelector('.my-alert');
+        const myForm = document.querySelector('.formulir');
 
         form.addEventListener('submit', e => {
             e.preventDefault()
@@ -175,7 +175,8 @@
                     btnLoading.classList.toggle('d-none');
                     btnKirim.classList.toggle('d-none');
                     myAlert.classList.toggle('d-none');
-                    form.reset();
+                    myForm.classList.toggle('d-none');
+                    // form.reset();
                     console.log('Success!', response);
 
                 })
