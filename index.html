@@ -78,11 +78,39 @@
                                 aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
-                            <label for="pesan" class="form-label">Pesan</label>
-                            <input type="text" name="pesan" class="form-control" id="pesan">
+                            <label for="prodi" class="form-label">Prodi</label>
+                            <input type="text" name="Prodi" class="form-control" id="prodi">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-kirim">Daftar Sekarang</button>
+                        <div class="mb-3">
+                            <label for="npm" class="form-label">Nomor Pokok Mahasiswa (NPM)</label>
+                            <input type="text" name="NPM" class="form-control" id="npm">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="tempatlahir" class="form-label">Tempat Lahir</label>
+                                <input type="text" name="Tempat_Lahir" class="form-control" id="tempatlahir">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="tanggallahir" class="form-label">Tanggal Lahir</label>
+                                <input type="date" name="Tanggal_Lahir" class="form-control" id="tanggallahir">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sekolah" class="form-label">Sekolah Asal</label>
+                            <input type="text" name="Sekolah_Asal" class="form-control" id="sekolah">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tingkatan" class="form-label">Tingkatan Terakhir</label>
+                            <select class="form-select" name="Tingkatan" id="tingkatan" aria-label="tingkatan">
+                                <option selected>pilih...</option>
+                                <option value="Tamu Penegak">Tamu Penegak</option>
+                                <option value="Penegak Bantara">Penegak Bantara</option>
+                                <option value="Penegak Laksana">Penegak Laksana</option>
+                                <option value="Pandega">Pandega</option>
+                            </select>
+                        </div>
 
+                        <button type="submit" class="btn btn-primary btn-kirim">Daftar Sekarang</button>
                         <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                             Loading...
