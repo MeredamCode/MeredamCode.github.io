@@ -70,7 +70,7 @@
                     <form name="data-cagakdega">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Nama Lengkap</label>
-                            <input type="text" name="nama" class="form-control" id="nama">
+                            <input type="text" name="nama" class="form-control" id="nama" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email Aktif</label>
@@ -79,29 +79,29 @@
                         </div>
                         <div class="mb-3">
                             <label for="prodi" class="form-label">Prodi</label>
-                            <input type="text" name="Prodi" class="form-control" id="prodi">
+                            <input type="text" name="Prodi" class="form-control" id="prodi" required>
                         </div>
                         <div class="mb-3">
                             <label for="npm" class="form-label">Nomor Pokok Mahasiswa (NPM)</label>
-                            <input type="text" name="NPM" class="form-control" id="npm">
+                            <input type="text" name="NPM" class="form-control" id="npm" required>
                         </div>
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="tempatlahir" class="form-label">Tempat Lahir</label>
-                                <input type="text" name="Tempat_Lahir" class="form-control" id="tempatlahir">
+                                <input type="text" name="Tempat_Lahir" class="form-control" id="tempatlahir" required>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="tanggallahir" class="form-label">Tanggal Lahir</label>
-                                <input type="date" name="Tanggal_Lahir" class="form-control" id="tanggallahir">
+                                <input type="date" name="Tanggal_Lahir" class="form-control" id="tanggallahir" required>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="sekolah" class="form-label">Sekolah Asal</label>
-                            <input type="text" name="Sekolah_Asal" class="form-control" id="sekolah">
+                            <input type="text" name="Sekolah_Asal" class="form-control" id="sekolah" required>
                         </div>
                         <div class="mb-3">
                             <label for="tingkatan" class="form-label">Tingkatan Terakhir</label>
-                            <select class="form-select" name="Tingkatan" id="tingkatan" aria-label="tingkatan">
+                            <select class="form-select" name="Tingkatan" id="tingkatan" aria-label="tingkatan" required>
                                 <option selected>pilih...</option>
                                 <option value="Tamu Penegak">Tamu Penegak</option>
                                 <option value="Penegak Bantara">Penegak Bantara</option>
@@ -129,10 +129,12 @@
     <div class="contact p-2 text-center">
         <div class="container">
             <h5>Contact Person:</h5>
-            <a href="" class="text-decoration-none text-dark"><i class="bi bi-whatsapp text-success"></i> Kak
+            <a href="https://api.whatsapp.com/send/?phone=6282280249907&text&type=phone_number&app_absent=0"
+                class="text-decoration-none text-dark" target="_blank"><i class="bi bi-whatsapp text-success"></i> Kak
                 Aldjo</a>
             |
-            <a href="" class="text-decoration-none text-dark"><i class="bi bi-whatsapp text-success"></i> Kak
+            <a href="https://api.whatsapp.com/send/?phone=6285333608129&text&type=phone_number&app_absent=0"
+                class="text-decoration-none text-dark" target="_blank"><i class="bi bi-whatsapp text-success"></i> Kak
                 Yona</a>
             </p>
         </div>
